@@ -1,85 +1,47 @@
 body{
     background: hsl(212, 45%, 89%);
     font-family: 'Outfit', sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-align: center;
     
-}
-
-
-
-#qrInfor p:first-child{
-     font-weight: 700;
-     
-}
-
-#qrInfor p:last-child{
-    font-weight: 400;
-    color:hsl(220, 15%, 55%);
-}
-
-
-
-
-
-@media (min-width:375px){
-
-    #qrContainer{
-        margin: 400px auto;
-        width: 80%;
-        background: hsl(0, 0%, 100%);
-        /* border: 1px solid black; */
-        border-radius: 15px;
-        
-    }
-
-   
-
-    #qrContainer img{
     
-        width: 95%;
-        border-radius: 15px;
-       
-    }
-
-    #qrImageContainer{
-        padding-top: 20px;
     
-    }
-
-    #qrInfor{
-        
-        padding: 20px  80px;
-        text-align: center;
-    }
-
-
-
-
-
 }
+ section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  
+ }
 
-@media (min-width: 1440px) {  
+.qrContainer{
+    max-width: 350px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
 
-#qrContainer{
-    margin: 400px auto;
-    width: 30%;
-    background: hsl(0, 0%, 100%);
-    /* border: 1px solid black; */
-    border-radius: 15px;
     
 }
 
-
-#qrContainer img{
-    
-    width: 95%;
-    border-radius: 15px;
-   
+.container__qr-image{
+    min-width:300px;
+    min-height:45vh; ;
+    border: 1px solid black;
+    background-image: url(./images/image-qr-code.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
 }
 
-#qrImageContainer{
-    padding-top: 10px;
+.qrContainer p:nth-child(2){
+    font-weight: bolder;
+}
+
+.qrContainer p:nth-child(3){
+    color: hsl(220, 15%, 55%);
+    font-weight: 700px;
 
 }
 
@@ -89,5 +51,6 @@ body{
 
 
 
-}
+
+
 
